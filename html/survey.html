@@ -1,0 +1,465 @@
+<html>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("data:image/jpeg;base64,/9j…GCIjBERgiIwRYjBFmMERGCIwRf/Z");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-checkbox {
+  display:inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+
+
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-darkblue);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.goal{
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10;
+  padding: 10px;
+}
+
+.star-rating{
+position: relative;
+  bottom: 180px;
+  left: 300px;
+}
+</style>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Fitness Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve our fitness environment
+        </p>
+      </header>
+      <form action="survey_get" id="survey-form" method="post">
+        
+          <legend>Your Details:</legend>
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Describe how a normal day is for you:</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Do not consider your workout routine</option>
+            <option value="sedentary">Sedentary</option>
+            <option value="lightly">Lightly Active</option>
+            <option value="moderately">Moderately Active</option>
+            <option value="vigorously">Vigorously Active</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+         
+        
+        <div class="form-group">
+          <p>What is your main fitness goal?</p>
+          <div class="goal">
+          <label>
+            <input
+              name="fitness-goal"
+              value="lose-body-fat"
+              type="radio"
+              class="input-radio"
+              checked
+            />Lose Body Fat</label
+          >
+          <label>
+            <input
+              name="fitness-goal"
+              value="muscle-strenght"
+              type="radio"
+              class="input-radio"
+            />Gain Muscle &amp; Strength</label
+          >
+    
+          <label
+            ><input
+              name="fitness-goal"
+              value="body-recomposition"
+              type="radio"
+              class="input-radio"
+            />Body Recomposition - Maintenance</label
+          >
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <p>
+            What is your favorite fitness class?
+            <span class="clue">(Please tick all that apply)</span>
+          </p>
+    
+          <label
+            ><input
+              name="prefer"
+              value="Hip-Hop"
+              type="checkbox"
+              class="input-checkbox"
+            />Hip-Hop workout</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="zumba"
+              type="checkbox"
+              class="input-checkbox"
+            />Zumba</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="yoga"
+              type="checkbox"
+              class="input-checkbox"
+            />Yoga</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="pilates"
+              type="checkbox"
+              class="input-checkbox"
+            />Pilates</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="spinning"
+              type="checkbox"
+              class="input-checkbox"
+            />Spinning</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Cardio kickboxing</label
+          >
+        </div>
+        <div id="review-form">
+      <h2>How would you rate your experience in which class?</h2>
+          
+    <p>Classes</p>
+    
+    <ul style="list-style-type:none;">
+      <li>Hip-Hop workout</li>
+      <li>Zumba</li>
+      <li>Yoga</li>
+      <li>Pilates</li>
+      <li>Spinning</li>
+      <li>Cardio Kickboxing</li>
+    </ul>  
+          
+      <div class="star-rating">
+        <div>
+        <p>Rating</p>
+    <!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+        <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+        <label for="Overall_5">5</label>
+        <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+        <label for="Overall_4">4</label>
+        <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+        <label for="Overall_3">3</label>
+        <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+        <label for="Overall_2">2</label>
+        <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+        <label for="Overall_1">1</label>
+        </div>
+      
+      
+        <div>
+    <!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+        <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+        <label for="Overall_5">5</label>
+        <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+        <label for="Overall_4">4</label>
+        <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+        <label for="Overall_3">3</label>
+        <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+        <label for="Overall_2">2</label>
+        <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+        <label for="Overall_1">1</label>
+      </div>
+      
+      <div>
+    <!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+        <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+        <label for="Overall_5">5</label>
+        <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+        <label for="Overall_4">4</label>
+        <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+        <label for="Overall_3">3</label>
+        <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+        <label for="Overall_2">2</label>
+        <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+        <label for="Overall_1">1</label>
+      </div>
+      
+      <div>
+    <!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+        <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+        <label for="Overall_5">5</label>
+        <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+        <label for="Overall_4">4</label>
+        <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+        <label for="Overall_3">3</label>
+        <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+        <label for="Overall_2">2</label>
+        <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+        <label for="Overall_1">1</label>
+      </div>
+      
+      <div>
+    <!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+        <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+        <label for="Overall_5">5</label>
+        <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+        <label for="Overall_4">4</label>
+        <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+        <label for="Overall_3">3</label>
+        <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+        <label for="Overall_2">2</label>
+        <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+        <label for="Overall_1">1</label>
+        </div>
+        
+        <div>
+    <!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+        <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+        <label for="Overall_5">5</label>
+        <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+        <label for="Overall_4">4</label>
+        <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+        <label for="Overall_3">3</label>
+        <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+        <label for="Overall_2">2</label>
+        <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+        <label for="Overall_1">1</label>
+        </div>
+      </div>
+    
+          
+    
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="rating">
+          
+    
+        <div class="form-group">
+            <a href="D:\Full stack project\popup.html">Submit</a>
+        </div>
+      </form>
+    </div>
+    </html>
