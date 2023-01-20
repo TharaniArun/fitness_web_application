@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Increase your power</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp - v4.1.0
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    
+
+    <section class="features" id="features">
+        <div class="heading">
+            <span>gym features</span>
+            <h3>modern equippment</h3>
+            <div class="box-container">
+                <div class="box">
+                    <img class="image" src="images/body-building.webp" alt="">
+                    <div class="content">
+                        <img src="images/muscle-icon.png" alt="">
+                        <h3>body building</h3>
+                        <p>A regimen of exercises designed to enhance the human body's muscular development and promote general 
+                            health and fitness. As a competitive activity, bodybuilding aims to display in artistic fashion 
+                            pronounced muscle mass, symmetry, and definition for overall aesthetic effect.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="images/gym-women.webp" alt="">
+                    <div class="content">
+                        <img src="images/woman-icon.png" alt="">
+                        <h3>workout for women</h3>
+                        <p>Body weight exercises, like push-ups, lunges and squats are going to be the best kinds of 
+                            workouts for you. Yoga and suspension training—that also involve lots of muscles working 
+                            together at the same time—are good bets for you, too. ?</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="images/man.webp" alt="">
+                    <div class="content">
+                        <img src="images/man-icon.png" alt="">
+                        <h3>workout for man</h3>
+                        <p>For men, strength increased after both morning and evening exercise, but evening exercise 
+                            brought additional benefits with “lower systolic blood pressure and fatigue and stimulates 
+                            fat oxidation compared to early morning exercise.”</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="images/fitness.webp" alt="">
+                    <div class="content">
+                        <img src="images/fitness-icon.png" alt="">
+                        <h3>fitness</h3>
+                        <p>Experts define physical fitness as “one's ability to execute daily activities with optimal 
+                            performance, endurance, and strength with the management of disease, fatigue, and stress and 
+                            reduced sedentary behavior.”</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="images/boxing.webp" alt="">
+                    <div class="content">
+                        <img src="images/boxing-icon.png" alt="">
+                        <h3>box</h3>
+                        <p>Boxing is a combat sport that involves fighting with fists. Traditionally, boxing has 
+                            also been referred to as “pugilism,” which literally means, “fist fight.” </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="images/zumba.jpg" alt="">
+                    <div class="content">
+                        <img src="images/zumba-icon.png" alt="">
+                        <h3>zumba</h3>
+                        <p>Zumba is a form of fitness class in which you burn off calories by dancing to different 
+                            kinds of lively tunes, often Latin-American inspired such as salsa, merengue and samba,
+                             but also other types of modern music like hip hop and Bollywood</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers" id="offers">
+        <div class="heading">
+            <span>You know what to do now</span>
+            <h3>LETS HAVE SOME FIT TIME</h3>
+        </div>
+                <a href="D:\Full stack project\GabLogics-Fitness-App-main\index.html" class="btn">Nutrition</a>
+                <a href="D:\Full stack project\Michaels-Workout-App-gh-pages\index.html" class="btn">Start now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>testimonials</span>
+            <h3>what our clients says</h3>
+        </div>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <p>It has been a great experience. It's an all-in-one system that takes care of everything I need to run my bjsknes</p>
+                    <div class="user">
+                        <img src="images/person1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque eligendi dicta explicabo,
+                        debitis voluptas quia! Neque accusantium tempore necessitatibus natus!</p>
+                    <div class="user">
+                        <img src="images/person2.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque eligendi dicta explicabo,
+                        debitis voluptas quia! Neque accusantium tempore necessitatibus natus!</p>
+                    <div class="user">
+                        <img src="images/person3.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque eligendi dicta explicabo,
+                        debitis voluptas quia! Neque accusantium tempore necessitatibus natus!</p>
+                    <div class="user">
+                        <img src="images/person4.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
