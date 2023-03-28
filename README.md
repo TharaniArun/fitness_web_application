@@ -1,8 +1,8 @@
-# Fitness_web_application
+# Fitness_portal
 
 ## AIM:
 
-A website to track a person’s workout in a flexible, efficient manner and keep their health in check. The customer will reach their fitness goals more quickly when their workout progress is tracked. This website gathers information of the user, distance travelled, calories burned, takes surveys, collect food eaten, collect workouts done and provide statistics about the last fitness data.
+Achieve your fitness goals through customized coaching and actionable tips based on your health and activity history.A website to track a person’s workout in a flexible, efficient manner and keep their health in check. The customer will reach their fitness goals more quickly when their workout progress is tracked. This website gathers information of the user, distance travelled, calories burned, takes surveys, collect food eaten, collect workouts done and provide statistics about the last fitness data.
 
 ## MODULES:
 
@@ -67,6 +67,22 @@ RAM	: 128 MB
 Hard disk	: 20 GB
 
 Monitor	: 15” color monitor
+
+##SNAPSHOT:
+
+![image](https://user-images.githubusercontent.com/97394464/228287075-3f47a075-a844-4e92-a344-a1f27c71f5e7.png)
+
+![image](https://user-images.githubusercontent.com/97394464/228287339-03591803-443e-428c-8c38-bd23ace2604a.png)
+
+![image](https://user-images.githubusercontent.com/97394464/228287873-ef2f5275-1c49-4757-93eb-353ab99dcde2.png)
+
+![image](https://user-images.githubusercontent.com/97394464/228288065-d9f38f19-f82f-4fdc-9bab-dc60c704c189.png)
+
+![image](https://user-images.githubusercontent.com/97394464/228288471-e10d0848-5874-4559-82e6-ec9f14604aa5.png)
+
+![image](https://user-images.githubusercontent.com/97394464/228288728-7a4acaa5-73d1-40bc-bcbf-34e64163594b.png)
+
+
 
 Keyboard : 122 keys
 
